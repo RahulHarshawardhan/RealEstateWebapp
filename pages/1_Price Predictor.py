@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 
 st.set_page_config(page_title="Viz Demo")
+st.write("Please Provide Proper details for better results. Thank you")
 
 # property_type', 'sector', 'bedRoom', 'bathroom', 'balcony',
 #        'agePossession', 'built_up_area', 'servant room', 'store room',
@@ -63,3 +64,4 @@ if st.button('predict'):
 
     # display
     st.text("The Price of the flat is between {} Cr and {} Cr".format(round(low,2),round(high,2)))
+
