@@ -109,12 +109,13 @@ fig3 = px.box(new_df[new_df['bedRoom'] <= 4], x = 'bedRoom', y='price', title='B
 st.plotly_chart(fig3, use_container_width=True)
 
 #plot 6 sns.displot(data=data, x="total_bill", kind="kde")
+st.header('Distribution plot Property Type Vs Price')
+
 fig4 = plt.figure(figsize= (10,4))
 sns.distplot(new_df[new_df['property_type']=='flat']['price'], label='house')
 sns.distplot(new_df[new_df['property_type']=='house']['price'], label='flat')
 #st.plotly_chart(fig4, use_container_width=True)
 plt.legend()
 st.pyplot(fig4)
-
 
 
